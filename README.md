@@ -26,31 +26,33 @@
 
 - [Microsoft Word](https://www.microsoft.com/en-us/microsoft-365/word)
   - Free for University affiliates, subscriptions for everyone else
-  - DOCX file format is industry standard for journals and publishers
+  - `.docx` file format is industry standard for journals and publishers
   - Not open source
   - Pushes cloud storage and now AI
 - [LibreOffice](https://www.libreoffice.org/)
   - Open source, free for everyone
-  - Uses ODT format by default but highly compatible with DOCX
-	- LibreOffice is better at rendering DOCX files than Word is at ODT
-  - Excellent PDF export options
+  - Uses `.odt` format by default but highly compatible with `.docx`
+	- LibreOffice is better at rendering `.docx` files than Word is at `.odt`
+  - Excellent `.pdf` export options
   - User interface feels like Word 2003 (a benefit to some...)
 - [Scrivener](https://www.literatureandlatte.com/)
   - More like a combination of Obsidian and Word/LibreOffice
-  - Allows you to write in snippets, rearrange them, and compile into DOCX and other formats
+  - Allows you to write in snippets, rearrange them, and compile into `.docx` and other formats
   - Geared toward novel and book writers but can be used to organize research
   - Not open source
   - One-time fee, must buy versions for MacOS, Windows, and mobile separately
   - Academic discount
 
-## Plaintext Workflow
+## Writing in Plain Text
 
-The following tools are for a different way of working. They involve drafting in a text editor and then exporting to DOCX, PDF, HTML. Originally developed by bloggers and digital-first authors but gaining traction among academics. Parallel to the LATEX and [Overleaf](https://www.overleaf.com/) workflow used in the sciences.
+The following tools are for a different way of working. They involve drafting in a text editor and then exporting to `.docx`, `.pdf`, `.html`. Originally developed by bloggers and digital-first authors but gaining traction among academics. Parallel to the [LaTex](https://www.latex-project.org/) and [Overleaf](https://www.overleaf.com/) workflow used in the sciences. [The Programming Historian](https://programminghistorian.org/en/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown) has an excellent article explaining the advantages and mechanics of this workflow. 
 
 ### Markdown
 
-- Markdown is a way of formatting plain text that allows for basic formatting, like **bold**, *italics*, headings, and footnotes^[Sample footnote].
+- Markdown is a way of formatting plain text that allows for basic formatting, like **bold**, *italics*, headings, and footnotes.[^1]
 - You use a plain text editor to write in Markdown. Then, you use a utility---either one built into the text editor itself or a separate program---to convert the markdown to an output format.
+
+[^1]: A sample footnote.
 
 ### Text Editors
 
@@ -72,7 +74,7 @@ The following tools are for a different way of working. They involve drafting in
 
 - [Pandoc](https://pandoc.org/)
   - Open source
-  - Command-line utility for converting between dozens of different file formats. Ex., markdown to [DOCX](/samples/README.docx), [ODT](/samples/README.odt), [RTF](/samples/README.rtf), [HTML](/samples/README.html), [PDF](/samples/README.pdf) (via LaTex).
+  - Command-line utility for converting between dozens of different file formats. Ex., markdown to [`.docx`](/samples/README.docx), [`.odt`](/samples/README.odt), [`.rtf`](/samples/README.rtf), [`.html`](/samples/README.html), [`.pdf`](/samples/README.pdf) (via LaTex).
 	- `pandoc sample.md -o sample.docx`
   - Can use a [template](/extras/manuscript-template.docx) to standardize output formatting
 	- `pandoc sample.md -o sample.docx --reference-doc=manuscript-template.docx`
@@ -85,10 +87,10 @@ The following tools are for a different way of working. They involve drafting in
 - Draft first, format later
 - Markdown text files are small
 - Citation management
-  - You can curate your bibliography in a BibTex file, embed citation keys into your Markdown manuscript, and then compile the citations automatically as part of the export process
+  - You can curate your bibliography in a `BibTex` file, embed citation keys into your Markdown manuscript, and then compile the citations automatically as part of the export process
 - Sync, version control, collaboration with `git` and [GitHub](https://github.com)
-- Easy export to a variety of formats: DOCX for publishers, PDF for printing, HTML for web
-- Outputs accessible DOCX files with Styles used correctly
+- Easy export to a variety of formats: `.docx` for publishers, `.pdf` for printing, `.html` for web
+- Outputs accessible `.docx` files with Styles used correctly
 - Markdown is spreading (Zotero, Obsidian, web developing)
 - Learn digital humanities tools
 - Open source tools are free to use and privacy-friendly
@@ -97,4 +99,4 @@ The following tools are for a different way of working. They involve drafting in
 
 - **Warning:** Learning curve (time suck)
 - Customization (time suck)
-- Need to convert to DOCX for collaboration and feedback (time suck)
+- Need to convert to `.docx` for collaboration and feedback (time suck)
