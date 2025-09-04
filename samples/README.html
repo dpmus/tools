@@ -43,7 +43,7 @@ href="https://www.microsoft.com/en-us/microsoft-365/word">Microsoft
 Word</a>
 <ul>
 <li>Free for University affiliates, subscriptions for everyone else</li>
-<li>DOCX file format is industry standard for journals and
+<li><code>.docx</code> file format is industry standard for journals and
 publishers</li>
 <li>Not open source</li>
 <li>Pushes cloud storage and now AI</li>
@@ -51,19 +51,20 @@ publishers</li>
 <li><a href="https://www.libreoffice.org/">LibreOffice</a>
 <ul>
 <li>Open source, free for everyone</li>
-<li>Uses ODT format by default but highly compatible with DOCX
+<li>Uses <code>.odt</code> format by default but highly compatible with
+<code>.docx</code>
 <ul>
-<li>LibreOffice is better at rendering DOCX files than Word is at
-ODT</li>
+<li>LibreOffice is better at rendering <code>.docx</code> files than
+Word is at <code>.odt</code></li>
 </ul></li>
-<li>Excellent PDF export options</li>
+<li>Excellent <code>.pdf</code> export options</li>
 <li>User interface feels like Word 2003 (a benefit to some…)</li>
 </ul></li>
 <li><a href="https://www.literatureandlatte.com/">Scrivener</a>
 <ul>
 <li>More like a combination of Obsidian and Word/LibreOffice</li>
 <li>Allows you to write in snippets, rearrange them, and compile into
-DOCX and other formats</li>
+<code>.docx</code> and other formats</li>
 <li>Geared toward novel and book writers but can be used to organize
 research</li>
 <li>Not open source</li>
@@ -72,19 +73,23 @@ separately</li>
 <li>Academic discount</li>
 </ul></li>
 </ul>
-<h2 id="plaintext-workflow">Plaintext Workflow</h2>
+<h2 id="writing-in-plain-text">Writing in Plain Text</h2>
 <p>The following tools are for a different way of working. They involve
-drafting in a text editor and then exporting to DOCX, PDF, HTML.
-Originally developed by bloggers and digital-first authors but gaining
-traction among academics. Parallel to the LATEX and <a
+drafting in a text editor and then exporting to <code>.docx</code>,
+<code>.pdf</code>, <code>.html</code>. Originally developed by bloggers
+and digital-first authors but gaining traction among academics. Parallel
+to the <a href="https://www.latex-project.org/">LaTex</a> and <a
 href="https://www.overleaf.com/">Overleaf</a> workflow used in the
-sciences.</p>
+sciences. <a
+href="https://programminghistorian.org/en/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown">The
+Programming Historian</a> has an excellent article explaining the
+advantages and mechanics of this workflow.</p>
 <h3 id="markdown">Markdown</h3>
 <ul>
 <li>Markdown is a way of formatting plain text that allows for basic
 formatting, like <strong>bold</strong>, <em>italics</em>, headings, and
-footnotes<a href="#fn1" class="footnote-ref" id="fnref1"
-role="doc-noteref"><sup>1</sup></a>.</li>
+footnotes.<a href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a></li>
 <li>You use a plain text editor to write in Markdown. Then, you use a
 utility—either one built into the text editor itself or a separate
 program—to convert the markdown to an output format.</li>
@@ -121,11 +126,12 @@ etc. etc.</li>
 <ul>
 <li>Open source</li>
 <li>Command-line utility for converting between dozens of different file
-formats. Ex., markdown to <a href="/samples/README.docx">DOCX</a>, <a
-href="/samples/README.odt">ODT</a>, <a
-href="/samples/README.rtf">RTF</a>, <a
-href="/samples/README.html">HTML</a>, <a
-href="/samples/README.pdf">PDF</a> (via LaTex).
+formats. Ex., markdown to <a
+href="/samples/README.docx"><code>.docx</code></a>, <a
+href="/samples/README.odt"><code>.odt</code></a>, <a
+href="/samples/README.rtf"><code>.rtf</code></a>, <a
+href="/samples/README.html"><code>.html</code></a>, <a
+href="/samples/README.pdf"><code>.pdf</code></a> (via LaTex).
 <ul>
 <li><code>pandoc sample.md -o sample.docx</code></li>
 </ul></li>
@@ -136,17 +142,26 @@ standardize output formatting
 </ul></li>
 </ul></li>
 </ul>
-<h3 id="consideration">Consideration</h3>
+<h3 id="considerations">Considerations</h3>
 <h4 id="advantages">Advantages</h4>
 <ul>
 <li>Distraction-free writing</li>
 <li>Draft first, format later</li>
 <li>Markdown text files are small</li>
+<li>Citation management
+<ul>
+<li>You can curate your bibliography in a <code>BibTex</code> file,
+embed citation keys into your Markdown manuscript, and then compile the
+citations automatically as part of the export process</li>
+</ul></li>
 <li>Sync, version control, collaboration with <code>git</code> and <a
 href="https://github.com">GitHub</a></li>
-<li>Easy export to a variety of formats: DOCX for publishers, PDF for
-printing, HTML for web</li>
-<li>Markdown is spreading (Zotero, web developing)</li>
+<li>Easy export to a variety of formats: <code>.docx</code> for
+publishers, <code>.pdf</code> for printing, <code>.html</code> for
+web</li>
+<li>Outputs accessible <code>.docx</code> files with Styles used
+correctly</li>
+<li>Markdown is spreading (Zotero, Obsidian, web developing)</li>
 <li>Learn digital humanities tools</li>
 <li>Open source tools are free to use and privacy-friendly</li>
 </ul>
@@ -154,14 +169,14 @@ printing, HTML for web</li>
 <ul>
 <li><strong>Warning:</strong> Learning curve (time suck)</li>
 <li>Customization (time suck)</li>
-<li>Need to convert to DOCX for collaboration and feedback (time
-suck)</li>
+<li>Need to convert to <code>.docx</code> for collaboration and feedback
+(time suck)</li>
 </ul>
 <section id="footnotes" class="footnotes footnotes-end-of-document"
 role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1"><p>Sample footnote<a href="#fnref1" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>A sample footnote.<a href="#fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
